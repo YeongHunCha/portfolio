@@ -1,0 +1,178 @@
+ul {
+  padding: 20px 20px;
+}
+
+.works-container {
+
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+  /* align-items: center; */
+
+  padding: 0 20px;
+  padding-bottom: 80px;
+  line-height: 1.5em;
+
+  background: #fff;
+  color: rgb(32, 29, 29);
+}
+
+.Title {
+  grid-column: 2/4;
+  margin-top: 80px;
+  padding: 0;
+  color: black;
+  font-size: var(--fontSizeXl);
+  line-height: var(--lineHeightSm);
+  text-align: center;
+}
+
+.work {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin: 50px auto;
+}
+
+.reverse {
+  grid-column: 2/4;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 100px;
+}
+
+.description {
+  margin-top: 30px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 70px;
+}
+
+.img-container img{
+  height: 500px;
+  margin: 20px 10px;
+}
+
+.notebook {
+  margin: 0 40px;
+}
+
+.notebook img {
+  height: 330px;
+  margin: 20px 0;
+}
+
+button{
+  background: var(--colorPrimary600);
+  color:#fff;
+  border:none;
+  height:40px;
+  font-size:1.0em;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding:0 1.3em;
+  cursor:pointer;
+  transition:500ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color: var(--colorPrimary600);
+}
+
+@media(max-width:990px) {
+
+  .notebook img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .img-container {
+    /* width: 100%;
+    height: auto; */
+    margin: 20px 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .work {
+    display: block;
+    margin-top: 100px;
+  }
+
+  .description {
+    margin-top: 0;
+    padding: 0 60px;
+  }
+
+}
+
+@media(max-width:760px) {
+
+  .img-container img {
+    height: 400px;
+    margin: 20px 10px;
+  }
+
+  .work {
+    margin-top: 40px;
+  }
+}
+
+@media(max-width:500px) {
+  .img-container img {
+    height: 250px;
+    margin: 20px 10px;
+  }
+
+  .description {
+    margin-top: 0;
+    padding: 0 30px;
+  }
+}
+
+@media(max-width:380px) {
+  .img-container img {
+    height: 200px;
+    margin: 20px 10px;
+  }
+
+  .works-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .communicon img,
+  .city img {
+    height: 160px;
+  }
+
+  .description p, .description li {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .works-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  button{
+    background: #4527a0;
+  }
+  button:hover{
+    color: #4527a0;
+  }
+
+  .description {
+    margin: 30px;
+  }
+}

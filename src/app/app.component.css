@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  color:black;
+}
+
+.nav {
+  position: fixed;
+  visibility: hidden;
+  width:100%;
+}
+
+.nav.fixed{
+  visibility: visible;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  * {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+

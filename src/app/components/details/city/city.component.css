@@ -1,0 +1,50 @@
+.detail-cover {
+  background: url('https://images.pexels.com/photos/169647/pexels-photo-169647.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section {
+  margin: 20px 20px;
+  grid-column: 2/4;
+}
+
+.section-grid .box-col p {
+  text-align: center;
+}
+.section-grid .box-col img {
+  height: 450px;
+  align-self: center;
+}
+
+/* media query */
+@media(max-width:760px) {
+  .section-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info p {
+    margin: 5px 0;
+  }
+
+}
+
+@media(max-width:480px) {
+  .section-grid {
+    display: block;
+  }
+
+  .box-col {
+    margin-bottom: 50px;
+  }
+
+  .box-col p {
+    padding: 0 30px;
+  }
+}

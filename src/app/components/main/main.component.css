@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  color:black;
+}
+
+.nav {
+  position: fixed;
+  visibility: hidden;
+  width:100%;
+}
+
+.nav.fixed{
+  visibility: visible;
+}

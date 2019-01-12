@@ -1,0 +1,99 @@
+.about-me {
+  display: grid;
+  grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+  color: #01172f;
+  background: #eaeaea;
+  background-size: cover;
+  background-position: center;
+}
+
+.section1 {
+  grid-column: 2/4;
+}
+
+.section1 .graduation {
+  font-size: 1.35rem;
+  padding: 10px 40px;
+  margin-top: 100px;
+  font-weight: 150;
+  text-align: center;
+}
+
+.section1 .introduce {
+  columns: 2;
+  column-gap: 2em;
+  font-size: 1.1rem;
+  line-height: 2;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+.skills {
+  grid-column: 2/4;
+  padding: 0 40px;
+  padding-bottom: 50px;
+}
+
+
+.skills h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 200%;
+}
+.skills ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0;
+
+}
+.skills ul li {
+  margin: 10px 20px;
+  list-style: none;
+  font-size: 200%;
+  color: rgb(219, 219, 219);
+}
+
+.skills ul li:hover {
+  color:white;
+}
+
+.text-container {
+  margin: 20px auto;
+}
+
+.text-container .skill-title {
+  font-size: 150%;
+  font-weight: 800;
+  text-align: left;
+  line-height: 1.5;
+  color: var(--colorPrimary800);
+}
+
+.text-container p {
+  font-size: 1.1rem;
+  text-align: left;
+  line-height: 1.5;
+
+}
+
+@media(max-width:700px) {
+  .section1 .graduation{
+    text-align: left;
+  }
+
+  .section1 .introduce {
+    columns: 1;
+    text-align: left;
+  }
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  /* IE10+ specific styles go here */
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+}
